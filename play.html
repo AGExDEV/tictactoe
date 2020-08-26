@@ -1,0 +1,43 @@
+<!doctype html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, intial-scale=1">
+    <title>Unbeatable Tic Tac Toe | ver 1.0</title>
+    <link rel="stylesheet" href="style.css">
+  </head>  
+  <body>
+    <header>
+        <p id="unbeatable"><a href="unbeatable.html">Unbeatable</a></p>
+        <h1><a href="unbeatable.html">tic tac toe</a></h1>
+    </header>
+    <div id="">
+        <span id="msg"></span>
+        <div><br></div>
+        <button id="flipCoin" onclick="flip()">Flip Coin</button>
+    </div>
+    <div>
+        <table id="gameBoard">
+          <tbody>
+            <tr><td id="0" onClick="counterStrike(0,-1)"></td>
+                <td id="1" onClick="counterStrike(1,-1)"></td>
+                <td id="2" onClick="counterStrike(2,-1)"></td></tr>
+            <tr><td id="3" onClick="counterStrike(3,-1)"></td>
+                <td id="4" onClick="counterStrike(4,-1)"></td>
+                <td id="5" onClick="counterStrike(5,-1)"></td></tr>
+            <tr><td id="6" onClick="counterStrike(6,-1)"></td>
+                <td id="7" onClick="counterStrike(7,-1)"></td>
+                <td id="8" onClick="counterStrike(8,-1)"></td></tr>
+          </tbody>
+        </table>
+    </div>
+
+    <footer id="document-footer">
+        <button id="playAgain" onclick="location.reload()">Play Again</button>
+    </footer>
+    <footer id="scripts">
+      <script src="play.js"></script>
+      <script src="flip.js"></script>
+      <script src="scripts.js"></script>
+    </footer>
+  </body>
+</html>
